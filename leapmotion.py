@@ -10,7 +10,7 @@ import Leap
 @reporter("hands in view")
 def get_hands():
     frame = controller.frame()
-        return len(frame.hands)
+    return len(frame.hands)
 
 @reporter("fingers in view")
 def get_fingers():
