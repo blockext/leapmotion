@@ -20,7 +20,7 @@ def get_fingers():
 menu("xyz", ["x", "y", "z"])
 menu("handNumber", ["1", "2"])
 
-@reporter("%m.xyz position of hand %m.handNumber")
+@reporter("%m.xyz position of hand %d.handNumber")
 def hand_pos(xyz="x", handNumber="1"):
     frame = controller.frame()
         if xyz == "x":
@@ -32,7 +32,7 @@ def hand_pos(xyz="x", handNumber="1"):
 
 menu("xyz", ["x", "y", "z"])
 
-@reporter("%m.xyz position of hand %n")
+@reporter("%m.xyz position of hand %d.handNumber")
 def finger_pos(xyz="x", fingerNumber=1):
     frame = controller.frame()
         if xyz == "x":
@@ -45,7 +45,7 @@ def finger_pos(xyz="x", fingerNumber=1):
 menu("ypr", ["yaw", "pitch", "roll"])
 menu("handNumber", ["1", "2"])
 
-@reporter("%m.ypr of hand %m.handNumber")
+@reporter("%m.ypr of hand %d.handNumber")
 def hand_ypr(ypr="yaw", handNumber="1"):
     frame = controller.frame()
         if ypr == "yaw":
